@@ -24,6 +24,89 @@
 		.top button:hover {
 		    background-color: #FFEB3B;
 		}
+		
+		.profile_main {
+			margin-top: 10%;
+			width: 90%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.user_img_div {
+			float: left;
+			width: 20%;
+			height: 30%;
+		}
+		.user_img {
+			border: 1px solid black;
+		}
+		.user_group {
+			width: 100%;
+			border: 1px solid black;
+			text-align: center;
+			font-size: 100%;
+			word-wrap: break-word;
+		}
+		.user_username {
+			margin-top: 5px;
+			width: 100%;
+			text-align: center;
+			font-size: 100%;
+			word-wrap: break-word;
+		}
+		.user_status {
+			margin-top: 5px;
+			width: 100%;
+			text-align: center;
+			font-size: 100%;
+			word-wrap: break-word;
+		}
+
+		.user_setting {
+			width: 70%;
+			height: 20%;
+			float: right;
+			border: 1px solid black;
+		}
+
+		.user_descriptions {
+			width: 70%;
+			height: 30%;
+			float: right;
+			border: 1px solid black;
+		}
+
+		.user_name {
+			margin-top: 5px;
+			width: 100%;
+			text-align: center;
+			font-size: 30px;
+			word-wrap: break-word;
+		}
+		.user_block {
+			border-top: 1px solid black;
+			margin-top: 5px;
+			width: 100%;
+			float: left;
+			word-wrap: break-word;
+		}
+		.user_birthday {
+			border-top: 1px solid black;
+			width: 100%;
+			height: user_img_div;
+			float: left;
+			word-wrap: break-word;
+		}
+		.svg {
+			margin-left: 5px;
+			float: left;
+		}
+		.svg_text {
+			display: table-cell;
+			vertical-align: middle;
+			font-size: 30px;
+			word-wrap: break-word;
+		}
 	</style>
 </head>
 <body>
@@ -59,6 +142,30 @@
 			</div>
 	</div>
 
-
+	<div class="profile_main">
+		<div class="profile">
+			<div class="user_img_div">
+				<img src="none_photo.jpg" class="user_img" width="100%" height="100%">
+				<div class="user_group">ПО 6</div>
+				<div class="user_username">toqoko</div>
+				<div class="user_status">Разработчик</div>
+			</div>
+			<div class="user_setting">
+				<div class="user_name">Даниил Щербаков</div>
+				<div class="user_block">
+					<div>
+						<img class="svg" src="block.svg" width="40">
+						<div class="svg_text">33</div>
+					</div>
+				</div>
+				<div class="user_birthday">
+					<div>
+						<img class="svg" src="birthday.svg" width="40">
+						<div class="svg_text">09.09.2006</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
