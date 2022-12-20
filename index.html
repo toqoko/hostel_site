@@ -3,11 +3,63 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Profile</title>
+	<style type="text/css">
+		.top {
+			overflow: hidden;
+			background-color: #C8E6C9;
+			border: 1px solid black;
+			width: 100%;
+		}
+		.top button {
+			width: 20%;
+			background-color: inherit;
+			float: left;
+/*			display: inline-block;*/
+			border: none;
+			outline: none;
+			cursor: pointer;
+			padding: 14px 16px;
+			transition: 0.3s;
+		}
+		.top button:hover {
+		    background-color: #FFEB3B;
+		}
+	</style>
 </head>
 <body>
-	<a href="./Registration/index.html">Зарегистрироваться</a>
-	<a href="./Login/index.html">Войти</a>
-	
+	<div class="top">
+			<div class="chat">
+				<button id="button_log_out">
+					Чат
+				</button>
+			</div>
+
+			<div class="news">
+				<button id="button_log_out">
+					Расписание
+				</button>
+			</div>
+
+			<div class="timetable">
+				<button id="button_log_out">
+					Новости
+				</button>
+			</div>
+
+			<div class="profile">
+				<button id="button_log_out">
+					Профиль
+				</button>
+			</div>
+
+			<div class="log_out">
+				<button id="button_log_out">
+					Выйти
+				</button>
+			</div>
+	</div>
+
+
 </body>
 </html>
