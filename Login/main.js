@@ -82,7 +82,7 @@ function sign() {
         else {
 
             localStorage.setItem("user_date", JSON.stringify(json));
-            window.location.href = "../Chat/chat.html";
+            window.location.href = "../Chat/index.html";
         }
     })
 }
