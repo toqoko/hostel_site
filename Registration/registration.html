@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Registration</title>
+</head>
+<body>
+	<div class="main">
+		<div class="name">
+			<p>Введите имя и фамилию</p>
+			<input type="text" id="input_name">
+			<div id="input_name_valid"></div>
+		</div>
+		<div class="block">
+			<p>Введите блок</p>
+			<input type="number" id="input_block" min="1" max="33">
+			<div id="input_block_valid"></div>
+		</div>
+		<div class="group">
+			<p>Выберете группу</p>
+			<select id="group_select" name="group">
+				<optgroup label="ПО">
+					<option selected value="ПО 6">ПО 6</option>
+					<option value="ПО 5">ПО 5</option>
+					<option value="ПО 4">ПО 4</option>
+					<option value="ПО 5">ПО 5</option>
+				</optgroup>
+				<optgroup label="ЛХ">
+					<option value="ЛХ 17">ЛХ 17</option>
+					<option value="ЛХ 16">ЛХ 16</option>
+					<option value="ЛХ 15">ЛХ 15</option>
+					<option value="ЛХ 14">ЛХ 14</option>
+				</optgroup>
+				<optgroup label="МД">
+					<option value="МД 23">МД 23</option>
+					<option value="МД 22">МД 22</option>
+					<option value="МД 21">МД 21</option>
+					<option value="МД 20">МД 20</option>
+				</optgroup>
+				<optgroup label="ТМ">
+					<option value="ТМ 2">ТМ 2</option>
+					<option value="ТМ 3">ТМ 3</option>
+				</optgroup>
+				<optgroup label="ТДМ">
+					<option value="ТДМ 2с">ТДМ 2с</option>
+					<option value="ТДМ 1с">ТДМ 1с</option>
+				</optgroup>
+				<optgroup label="ТД">
+					<option value="ТД 20">ТД 20</option>
+					<option value="ТД 21с">ТД 21с</option>
+			</select>
+			<div id="group_select_valid"></div>
+		</div>
+		<div class="birthday">
+			<p>Введите дату рождения</p>
+			<input type="date" id="input_birthday" value="2007-01-01" max="2007-01-01">
+			<div id="input_birthday_valid"></div>
+		</div>
+		<div class="login">
+			<p>Введите логин</p>
+			<input type="text" id="input_login">
+			<div id="input_login_valid"></div>
+		</div>
+		<div class="password">
+			<p>Введите пароль</p>
+			<input type="password" id="input_password">
+			<div id="input_password_valid"></div>
+		</div>
+		
+		<a href="../Login/login.html">Войти</a>
+		<div class="sign">
+			<div id="registration_valid"></div>
+			<button id="button_registration">Зарегистрироваться</button>
+		</div>
+	</div>
+	<script src="./main.js"></script>
+</body>
+</html>
