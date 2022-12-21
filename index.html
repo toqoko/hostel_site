@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Profile</title>
+	<style type="text/css">
+		.top {
+			overflow: hidden;
+			background-color: #C8E6C9;
+			border: 1px solid black;
+		}
+		.top button {
+			width: 20% ;
+			background-color: inherit;
+			float: left;
+			border: none;
+			outline: none;
+			cursor: pointer;
+			padding: 14px 16px;
+			transition: 0.3s;
+			word-wrap: break-word;
+		}
+		.top button:hover {
+		    background-color: #FFEB3B;
+		}
+		
+		.profile_main {
+			margin-top: 10%;
+			width: 90%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.user_img_div {
+			float: left;
+			width: 20%;
+			height: 30%;
+		}
+		.user_img {
+			border: 1px solid black;
+		}
+		.user_group {
+			width: 100%;
+			border: 1px solid black;
+			text-align: center;
+			font-size: 100%;
+			word-wrap: break-word;
+		}
+		.user_username {
+			margin-top: 5px;
+			width: 100%;
+			text-align: center;
+			font-size: 100%;
+			word-wrap: break-word;
+		}
+		.user_status {
+			margin-top: 5px;
+			width: 100%;
+			text-align: center;
+			font-size: 100%;
+			word-wrap: break-word;
+		}
+
+		.user_setting {
+			width: 70%;
+			height: 20%;
+			float: right;
+			border: 1px solid black;
+		}
+
+		.user_descriptions {
+			width: 70%;
+			height: 30%;
+			float: right;
+			border: 1px solid black;
+		}
+
+		.user_name {
+			margin-top: 5px;
+			width: 100%;
+			text-align: center;
+			font-size: 30px;
+			word-wrap: break-word;
+		}
+		.block {
+			border-top: 1px solid black;
+			margin-top: 5px;
+			width: 100%;
+			float: left;
+			word-wrap: break-word;
+		}
+		.birthday {
+			border-top: 1px solid black;
+			width: 100%;
+			height: user_img_div;
+			float: left;
+			word-wrap: break-word;
+		}
+		.svg {
+			margin-left: 5px;
+			float: left;
+		}
+		.svg_text {
+			display: table-cell;
+			vertical-align: middle;
+			font-size: 30px;
+			word-wrap: break-word;
+		}
+	</style>
+</head>
+<body>
+	<div class="top">
+			<div class="chat">
+				<button id="button_log_out">
+					Чат
+				</button>
+			</div>
+
+			<div class="news">
+				<button id="button_log_out">
+					Расписание
+				</button>
+			</div>
+
+			<div class="timetable">
+				<button id="button_log_out">
+					Новости
+				</button>
+			</div>
+
+			<div class="profile">
+				<button id="button_log_out">
+					Профиль
+				</button>
+			</div>
+
+			<div class="log_out">
+				<button id="button_log_out">
+					Выйти
+				</button>
+			</div>
+	</div>
+
+	<div class="profile_main">
+		<div class="profile">
+			<div class="user_img_div">
+				<img src="none_photo.jpg" class="user_img" width="100%" height="100%">
+				<div class="user_group" id="user_group"></div>
+				<div class="user_username" id="user_username"></div>
+				<div class="user_status" id="user_status"></div>
+			</div>
+			<div class="user_setting">
+				<div class="user_name" id="user_name">ааа</div>
+				<div class="block">
+					<div>
+						<img class="svg" src="block.svg" width="40">
+						<div class="svg_text" id="user_block"></div>
+					</div>
+				</div>
+				<div class="birthday">
+					<div>
+						<img class="svg" src="birthday.svg" width="40">
+						<div class="svg_text" id="user_birthday"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="main.js"></script>
+</body>
+</html>
