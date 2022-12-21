@@ -83,14 +83,14 @@
 			font-size: 30px;
 			word-wrap: break-word;
 		}
-		.user_block {
+		.block {
 			border-top: 1px solid black;
 			margin-top: 5px;
 			width: 100%;
 			float: left;
 			word-wrap: break-word;
 		}
-		.user_birthday {
+		.birthday {
 			border-top: 1px solid black;
 			width: 100%;
 			height: user_img_div;
@@ -146,26 +146,27 @@
 		<div class="profile">
 			<div class="user_img_div">
 				<img src="none_photo.jpg" class="user_img" width="100%" height="100%">
-				<div class="user_group">ПО 6</div>
-				<div class="user_username">toqoko</div>
-				<div class="user_status">Разработчик</div>
+				<div class="user_group" id="user_group"></div>
+				<div class="user_username" id="user_username"></div>
+				<div class="user_status" id="user_status"></div>
 			</div>
 			<div class="user_setting">
-				<div class="user_name">Даниил Щербаков</div>
-				<div class="user_block">
+				<div class="user_name" id="user_name">ааа</div>
+				<div class="block">
 					<div>
 						<img class="svg" src="block.svg" width="40">
-						<div class="svg_text">33</div>
+						<div class="svg_text" id="user_block"></div>
 					</div>
 				</div>
-				<div class="user_birthday">
+				<div class="birthday">
 					<div>
 						<img class="svg" src="birthday.svg" width="40">
-						<div class="svg_text">09.09.2006</div>
+						<div class="svg_text" id="user_birthday"></div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+	<script src="main.js"></script>
 </body>
 </html>
